@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Aprendiendo Javascript II</title>
+		<title>Aprendiendo Javascript III</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -43,8 +43,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Aprendiendo Javascript II</h1>
-					<h3>Una plantilla para el futuro...</h3>
+					<h1>Aprendiendo Javascript III</h1>
+					<h3>MV*, el camino a las web apps del futuro</h3>
 					<small>
 					<p>
 						<a href="http://twitter.com/oagranada">@oagranada</a>
@@ -94,10 +94,11 @@
 				</section>
 
 				<section>
-					<h2>Ignorar cosas dificulta la vida diaria</h2>
-					<p>
-						Durante muchos años el hombre dejo de hacer muchas cosas por no poder transportar materia prima de un lugar a otro. De la misma manera el hombre actual ha dejado de hacer cosas interesantes en el navegador por no conocer las herramientas.
-						<img src="img/capital.jpg" alt="">
+					<h2>El cliente tiene la fuerza</h2>
+          <p> 
+          En el principio de los tiempos el HipertextTransferProtocol unicamente permitia motrar texto, ahora hay una herramienta que entrega al cliente la fuerza para hacer cosas mucho más grandes y potentes.
+          <br />
+						<img src="img/hulk.jpg" width="300px" alt="">
 					</p>
 
 					<aside class="notes">
@@ -107,63 +108,41 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Reescribiendo las cosas</h2>
-						<p>
-							Muchas de las plataformas existentes generan todo el código html en el servidor, aumentando la cantidad de datos a enviar, provocando mayor carga en el servidor y haciendo más lenta la interacción con el usuario.
+						<h2>¿Y donde esta la fuerza?</h2>
+            <p> 
+            Toda la fuerza del cliente esta en los navegadores modernos, que permiten usar mejor los recursos de las maquinas y aprovechar procesadores y gpu's, permitiendo implementar una arquitectura Fat Client.
 						</p>
-						<img width="300" src="img/tortuga.jpg" alt="Down arrow">
-						<aside class="notes">
-							* Es posible compararlo con un esclavo, por que hace todo lo que uno le dice.
-						</aside>
+						<img width="300" src="img/alienware.jpg" alt="Down arrow">
 					</section>
 					<section>
-						<h2>¿Y como si no así?</h2>
-						<p>Hay tecnicas avanzadas de reescritura del dom mediante sistemas de platillas front-end, como underscore, swig, mustache, twig y muchos más.</p>
-						<img width="300" src="img/handlebars_logo.png" alt="">
+						<h2>¿Y como se hace eso?</h2>
+						<p>Hay infinidad de frameworks que nos permiten hacer uso de este tipo de arquitecturas, AngularJS, BackboneJs, EmberJS, etc.</p>
+						<img width="300" src="img/backbone.png" style="background-color:#fff" alt="">
 					</section>
 					<section>
 						<h2>¿Y como funciona?</h2>
-						<p>Se descargan librerias a la maquina cliente que preprocesan plantillas, que a su vez son alimentadas con datos relevantes, como objetos javascript para así generar el contenido necesario.</p>
-						<img width="300" src="img/libreria.gif" alt="">
+						<p>Mediante librerias Javascript estructuramos la aplicación con un patrón arquitectural muy similar a MVC (MV*), estas permiten tner una capa de acceso a datos, una de interfaz gráfica y una de logica, a partir de esto inicia el proceso de desarrollo de la aplicación.</p>
+						<img width="300" src="img/js.jpg" alt="">
 					</section>
 				</section>
 
 				<section>
 					<h2>Ventajas</h2>
 					<p>
-						Usar plantillas renderizadas en el cliente tiene varias ventajas, algunas son:
+						Usar este tipo de arquitecturas permite desarrollar aplicaciones con las siguientes ventajas:
 						<ul>
 							<li>Reducción de la carga de trabajo para el servidor.</li>
 							<li>Reducción de la cantidad de datos que deben ser transferidos del servidor al cliente</li>
 							<li>Mejora en la velocidad de generación de contenido en los navegadores.</li>
-							<li>Sencillez a la hora de programar.</li>
+              <li>Sencillez a la hora de programar.</li>
+              <li>Desarrollar aplicaciones escalables.</li>
+              <li>Implementar aplicaciones que no sobrecargan el servidor.</li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
 					<h2>Entrando en Materia</h2>
-				</section>
-
-				<section>
-					<h2>un template basico</h2>
-					<pre><code data-trim contenteditable>
-						
-						&#60;!DOCTYPE html&#62;
-						&#60;html lang="en"&#62;
-						&#60;head&#62;
-							<meta charset="UTF-8">
-							<title>{{titulo}}</title>
-						&#60;/head&#62;
-						&#60;body&#62;
-							Hola {{usuario}}, ¿A que se dedica?:
-							&#60;ul&#62;{% for tarea in tareas %}
-								&#60;li&#62;{{tarea}}&#60;/li&#62;
-							{% endfor %}&#60;/ul&#62;
-						&#60;/body&#62;
-						&#60;/html&#62;
-
-					</code></pre>
 				</section>
 
 				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
